@@ -1,0 +1,47 @@
+1. How do I create a hidden file or folder? How do I display it in the CLI?
+-You can create a hidden folder by using the command
+
+mkdir .foldername
+
+-You can create a hidden file by using the command
+
+touch .filename
+
+-How do I display it in CLI?
+
+-First of all you need to check of the folder or directory you are in right or you need to be in another directory.
+You can check with the command 
+
+pwd
+
+-After that you need to use
+
+ls
+
+2. How do I create multiple nested directories, like `/c/Users/myusername/these/folders/are/just/for/fun`?  
+
+By using the command
+
+mkdir -f these/folderare/just/for/fun
+
+3.How do I append a message to a file, without a newline character, so the output would be:?
+
+-For this we use echo and write the text to go to another line you need to use enter. 
+But you need to write your message in double quote.
+
+echo "first message(Use enter to go down.)
+second message" >> text.txt
+ 
+4. Write a sequence of commands to make four groups of students. Each group should contain four students. 
+One student cannot be part of multiple groups.
+
+-First wee need to shuffle. the text by using the command
+
+shuf class.txt
+
+- Now the names are in random order. So we can group them by 4 students in each group.
+
+sed -n '1,4p' names.txt > group1.txt
+sed -n '5,8p' names.txt > group2.txt
+sed -n '9,12p' names.txt > group3.txt
+sed -n '13,16p' names.txt > group4.txt
