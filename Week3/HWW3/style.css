@@ -1,0 +1,406 @@
+@font-face {
+  font-family: "MyWebFont";
+  src: url("webfont.eot"); /* IE9 Compat Modes */
+  src: url("webfont.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("webfont.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("webfont.woff") format("woff"),
+    /* Pretty Modern Browsers */ url("webfont.ttf") format("truetype"),
+    /* Safari, Android, iOS */ url("webfont.svg#svgFontName") format("svg"); /* Legacy iOS */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "MyWebFont", Calibri, sans-serif;
+  font-weight: normal;
+  font-size: 1.125rem;
+  line-height: 1.625;
+}
+/* div,
+section {
+  border: 1px solid #000;
+} */
+
+/* Header CSS*/
+
+.logo {
+  text-align: center;
+  margin: -8px 0 -8px 262px;
+}
+
+nav {
+  width: 100%;
+  min-height: 75px;
+  background-color: #01689b;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul li {
+  list-style-type: none;
+  margin: 0 10px;
+  padding: 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 19.2px;
+}
+/* .topnav {
+  display: none;
+} */
+
+.item-left {
+  margin-left: 10px;
+}
+
+.item-left a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 26px;
+}
+
+.item-left a:hover,
+.item-right li:hover a {
+  text-decoration: underline;
+}
+
+.search {
+  box-sizing: border-box;
+  position: absolute;
+  top: 110px;
+  right: 0;
+  left: auto;
+  width: 40%;
+  display: flex;
+}
+.search input {
+  cursor: text;
+  padding: 5px;
+  /* position: absolute; */
+  top: 50px;
+  right: 0;
+  border: 0;
+  outline: 0;
+  width: 100%;
+  height: 48px;
+  margin: 50px 0 0 80px;
+  z-index: 10;
+  font-size: 1.025em;
+}
+.search button {
+  width: 10%;
+  height: 48px;
+  background-color: #000;
+  font-size: 25px;
+  border: none;
+  margin: 50px 80px 0 0;
+}
+.search button a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Main Gallery */
+
+.main {
+  background: url(./img/minimumlonen-.jpg);
+  background-position: center;
+}
+.main-gallery {
+  display: flex;
+  justify-content: space-between;
+  max-height: 1200px;
+}
+
+.wrapper {
+  margin: 25px 0 50px 30px;
+  background-color: #fff;
+  width: 390px;
+  min-height: 270px;
+}
+
+.wrapper h1 {
+  font-size: 23px;
+  margin: 20px 0 0 20px;
+}
+
+.wrapper span {
+  font-size: 14px;
+  color: #01689b;
+}
+
+.wrapper ul li {
+  margin-left: 20px;
+  list-style-type: none;
+  line-height: 2.3em;
+}
+
+.wrapper ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #01689b;
+}
+
+.wrapper ul li:hover a {
+  text-decoration: underline;
+  color: #000;
+}
+
+.wrapper ul li:hover span {
+  color: #000;
+}
+
+.text {
+  position: absolute;
+  font-size: 14px;
+  margin-top: -40px;
+  margin-left: 20px;
+  color: #fff;
+}
+
+/* Second Part*/
+
+section .main-contenct {
+  background-color: #f3f3f3;
+}
+.four-items-flex {
+  width: 100%;
+  margin: auto 0 auto auto;
+  margin-top: 50px;
+  padding: 20px;
+}
+
+.four-items-flex ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.four-items-flex ul li {
+  position: relative;
+  box-sizing: border-box;
+  list-style-type: none;
+  width: calc(25% - 20px);
+  margin: 10px 10px 10px 10px;
+}
+.four-items-flex ul li a {
+  text-decoration: none;
+}
+.four-items-flex ul h3 {
+  color: #01689b;
+  font-size: 25px;
+  margin-bottom: 10px;
+  line-height: 1.2em;
+}
+.four-items-flex ul li a h3:hover {
+  text-decoration: underline;
+}
+.four-items-flex ul p {
+  line-height: 20px;
+  font-size: 18px;
+  color: #000;
+}
+
+/* Footer */
+.general-info {
+  background-color: #01689b;
+  color: #fff;
+  margin-top: 100px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.footer-container {
+  background-color: #01689b;
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 50px 30px 0 30px;
+  margin: 0;
+}
+
+.item1 {
+  flex: 2;
+  font-style: italic;
+  font-size: 20px;
+}
+
+.imp-links {
+  flex: 1;
+
+  display: flex;
+}
+.item2 {
+  flex: 2;
+}
+.item3 {
+  flex: 2;
+}
+.footer-container h1 {
+  margin: 0 0 20px 0;
+}
+.footer-container li {
+  line-height: 28px;
+  list-style: none;
+  font-size: 18px;
+}
+.footer-container li:last-child {
+  margin-bottom: 40px;
+}
+.footer-container li a {
+  text-decoration: none;
+  color: #fff;
+}
+.footer-container li a:hover {
+  text-decoration: underline;
+}
+
+.lang {
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.lang p {
+  margin: 0.5%;
+  border: 1px solid #01689b;
+  padding: 5px;
+}
+
+.lang a {
+  text-decoration: none;
+  color: #01689b;
+}
+.lang p:first-child {
+  border: none;
+  font-weight: bold;
+  color: #000;
+}
+
+/* Responsive design */
+
+@media screen and (max-width: 765px) {
+  nav {
+    width: 100%;
+    min-height: 150px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .logo {
+    margin: 0 0 0 20%;
+  }
+
+  .item-left {
+    position: relative;
+    margin: 10px;
+  }
+  .item-right {
+    display: none;
+  }
+
+  .wrapper {
+    position: relative;
+  }
+
+  .search {
+    position: absolute;
+    width: 100%;
+    margin: 5px;
+  }
+
+  .wrapper {
+    width: 90%;
+  }
+  .four-items-flex ul li {
+    width: 90%;
+    margin: 10px 10px 10px 10px;
+  }
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Style the navigation menu */
+  .topnav {
+    overflow: hidden;
+    background-color: #01689b;
+    position: relative;
+  }
+
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #myLinks {
+    display: inline-block;
+    margin: 0 20px;
+  }
+  .topnav ul li {
+    list-style-type: none;
+  }
+  .topnav li a {
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+  }
+  /* Style navigation menu links */
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    text-align: center;
+
+    background-color: #01689b;
+  }
+
+  /* Style the hamburger menu */
+  .icon {
+    color: #fff;
+    background: #01689b;
+    display: block;
+    /* position: absolute; */
+    z-index: 100;
+    right: 0;
+    top: -400px;
+  }
+
+  /* .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  } */
+}
+
+@media screen and (min-width: 765px) and (max-width: 1024px) {
+  .wrapper {
+    width: 43%;
+    padding: 10px;
+    height: auto;
+  }
+  .wrapper ul li {
+    line-height: 20px;
+  }
+  .four-items-flex ul li {
+    width: 46%;
+    margin: auto;
+  }
+  .wrapper li a {
+    font-size: 13px;
+  }
+  .search button {
+    width: 20%;
+  }
+  .tag {
+    display: none;
+  }
+}
